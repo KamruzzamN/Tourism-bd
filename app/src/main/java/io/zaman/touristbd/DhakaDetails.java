@@ -21,55 +21,57 @@ public class DhakaDetails extends AppCompatActivity {
 
         int index = getIntent().getExtras().getInt("key");
         String[] placeName = getResources().getStringArray(R.array.dhaka_place_name);
-        if (index == 0){
-            placeTitleDetails.setText(placeName[0]);
-            imageView.setImageResource(R.drawable.dhaka);
-            placeContentDetails.setText(R.string.dhaka_all_place);
-        }
-        else if(index == 1){
-            placeTitleDetails.setText(placeName[1]);
-            imageView.setImageResource(R.drawable.taramosjid);
-            placeContentDetails.setText(R.string.tara_mosjid);
-        }
-        else if(index == 2){
-            placeTitleDetails.setText(placeName[2]);
-            imageView.setImageResource(R.drawable.sakrinutshob);
-            placeContentDetails.setText(R.string.sakrin_utshop);
-        }
-        else if(index == 3){
-            placeTitleDetails.setText(placeName[3]);
-            imageView.setImageResource(R.drawable.hatirjil);
-            placeContentDetails.setText(R.string.hatirjil);
-        }
-        else if(index == 4){
-            placeTitleDetails.setText(placeName[4]);
-            imageView.setImageResource(R.drawable.jatiojatoghor);
-            placeContentDetails.setText(R.string.jatio_jado_ghor);
-        }
-        else if(index == 5){
-            placeTitleDetails.setText(placeName[5]);
-            imageView.setImageResource(R.drawable.jatiosritishoudo);
-            placeContentDetails.setText(R.string.jatio_shireshoudo);
-        }
-        else if(index == 6){
-            placeTitleDetails.setText(placeName[6]);
-            imageView.setImageResource(R.drawable.ahosanmonjil);
-            placeContentDetails.setText(R.string.ahahosan_monjil);
-        }
-        else if(index == 7){
-            placeTitleDetails.setText(placeName[7]);
-            imageView.setImageResource(R.drawable.drime);
-            placeContentDetails.setText(R.string.drem_holy);
-        }
-        else if(index == 8){
-            placeTitleDetails.setText(placeName[8]);
-            imageView.setImageResource(R.drawable.nohaspolli);
-            placeContentDetails.setText(R.string.nohaspolly);
-        }
-        else if(index == 9){
-            placeTitleDetails.setText(placeName[9]);
-            imageView.setImageResource(R.drawable.diyabari);
-            placeContentDetails.setText(R.string.uttara_diya_bari);
+        switch(index) {
+            case 0:
+                placeTitleDetails.setText(placeName[0]);
+                imageView.setImageResource(R.drawable.dhaka);
+                placeContentDetails.setText(R.string.dhaka_all_place);
+                break;
+            case 1:
+                placeTitleDetails.setText(placeName[1]);
+                imageView.setImageResource(R.drawable.taramosjid);
+                placeContentDetails.setText(R.string.tara_mosjid);
+                break;
+            case 2:
+                placeTitleDetails.setText(placeName[2]);
+                imageView.setImageResource(R.drawable.sakrinutshob);
+                placeContentDetails.setText(R.string.sakrin_utshop);
+                break;
+            case 3:
+                placeTitleDetails.setText(placeName[3]);
+                imageView.setImageResource(R.drawable.hatirjil);
+                placeContentDetails.setText(R.string.hatirjil);
+                break;
+            case 4:
+                placeTitleDetails.setText(placeName[4]);
+                imageView.setImageResource(R.drawable.jatiojatoghor);
+                placeContentDetails.setText(R.string.jatio_jado_ghor);
+                break;
+            case 5:
+                placeTitleDetails.setText(placeName[5]);
+                imageView.setImageResource(R.drawable.jatiosritishoudo);
+                placeContentDetails.setText(R.string.jatio_shireshoudo);
+                break;
+            case 6:
+                placeTitleDetails.setText(placeName[6]);
+                imageView.setImageResource(R.drawable.ahosanmonjil);
+                placeContentDetails.setText(R.string.ahahosan_monjil);
+                break;
+            case 7:
+                placeTitleDetails.setText(placeName[7]);
+                imageView.setImageResource(R.drawable.drime);
+                placeContentDetails.setText(R.string.drem_holy);
+                break;
+            case 8:
+                placeTitleDetails.setText(placeName[8]);
+                imageView.setImageResource(R.drawable.nohaspolli);
+                placeContentDetails.setText(R.string.nohaspolly);
+                break;
+            case 9:
+                placeTitleDetails.setText(placeName[9]);
+                imageView.setImageResource(R.drawable.diyabari);
+                placeContentDetails.setText(R.string.uttara_diya_bari);
+                break;
         }
     }
 }
